@@ -1,2 +1,3 @@
 # Python-tutorials
-Short guides describing how python works
+Short guides showing how python works
+Describing my adventure in learning and deepening my knowledge of python
