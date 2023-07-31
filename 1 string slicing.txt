@@ -1,22 +1,22 @@
- slicing = create a substring by extracting elements from another string 
-           --> indexing[]    start:stop:step]
-           --> slice()       start:stop:step]
+ slicing --> create a substring by extracting elements from another string 
+           - indexing[]    start:stop:step
+           - slice()       start:stop:step
            
            
            
 
 name = "John Kowalski"
 
-first_name = name[:3]       #output: [0:4]       --> "John"      --> first char is always starting from 0 not from 1, -> :4 means from first char to fifth char
-last_name = name[4:]        #output: [5:end]     --> "Kowalski"  --> 5:  it means from sixth char till the last char
-funky_name = name[::2]      #output: [0:end:2]   --> "Jh oasi"      --> from first to the last char, every other char
-reversed_name = name[::-1]  #output: [0:end:-1]  --> "edoC orB"  --> from first to the last char, reversed order  
+first_name = name[:3]       #means: [0:4]      | output: "John"      --> first char is always starting from 0 not from 1, --> ':4' means from first char to fifth char
+last_name = name[5:]        #means: [5:end]    | output: "Kowalski"  --> '5:end' means from sixth char till the last char
+funky_name = name[::2]      #means: [0:end:2]  | output: "Jh oasi"   --> from first to the last char, every other char
+reversed_name = name[::-1]  #means: [0:end:-1] | output: "edoC orB"  --> from first to the last char, reversed order  
 
 
 
 website1 = "http://google.com"
 website2 = "http://wikipedia.com"
 
-slice = slice(7,-4)    # --> since where -->(here I want just the name of the site without 'http' and without 'com') in this case 'm' is -1 and '.' it's -4
+slice = slice(7,-4)    # --> since where --> Here I want just the name of the site without 'http' and without 'com' (in this case 'm' is -1 and '.' it's -4)
 print(website1[slice]) # --> call
 
