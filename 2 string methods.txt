@@ -21,8 +21,8 @@ SPLIT	   --> "texts".split("separator")  --> Splits the string based on the spec
                           #alternative use --> first, name, age = x1.split('-')
 		          #alternative use --> print(first)    #--> OUTPUT:  'john'
 			
-JOIN   	   --> "separator".join(sekwencja) -->  Joins the elements of the sequence (e.g., list) into a single string using the specified separator ("separator"). 
-                                                It returns a new string
+JOIN   	   --> "separator".join(sekwencja) --> Joins the elements of the sequence (e.g., list) into a single string using the specified separator ("separator"). 
+                                               It returns a new string
 
 end=""     --> In the expression print(symbol, end=""), end="" is an optional argument for the print() function. 
                It specifies what should be printed after the current content. By default, print() ends each printed line with a newline character ("\n"), 
