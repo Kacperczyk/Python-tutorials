@@ -1,0 +1,25 @@
+In Python, if is a conditional statement that allows you to make decisions based on certain conditions. 
+It is used to execute a block of code only if a specified condition is true. 
+This way, you can control the flow of your program based on the conditions you specify, making your code more flexible and responsive to different situations.
+The general syntax of the if statement is as follows:
+
+if condition:
+    # Code to be executed if the condition is True
+elif condition:
+    # Code to be executed if the previous condition was not True and this condition is True
+else:
+    # Code to be executed if none of the above conditions are True
+	
+	
+#EXAMPLE:
+if age >V18:
+    print("You are an adult")
+elif age == 100:
+    print("Century age!")
+else:
+    print("You are a child")
+#Here's how the if statement works in practice:
+# - If the value of the variable age is greater than 18, it will print "You are an adult".
+# - If the value of the variable age is not greater than 18, but it is equal to 100, it will print "Century age!".
+# - If the value of the variable age is neither greater than 18 nor equal to 100, it will print "You are a child".
+

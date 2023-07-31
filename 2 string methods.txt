@@ -1,0 +1,29 @@
+LEN         --> len("texts")                --> specifies the length of the string (how many characters are in the string, in this case 5)
+FIND        --> "texts".find("t")           --> Returns the index of the first occurrence of the specified character ("t" in this case), in the string. Since indexing starts from 0, it will return 0 as "t" is the first character in the string.
+CAPITALISE  --> "texts".capitalize()        --> Capitalizes the first letter of the string. It returns a new string with the first letter in uppercase and the rest in lowercase
+UPPER       --> "texts".upper()             --> Converts all the characters in the string to uppercase. It returns a new string with all uppercase letters.
+LOWER       --> "texts".lower()             --> Converts all the characters in the string to lowercase. It returns a new string with all lowercase letters.
+ISDIGIT     --> "texts".isdigit()           --> Returns True or False, depending on whether the string contains only digits (numbers)
+ISALPHA     --> "texts".isalpha()           --> Returns True or False, depending on whether the string contains only alphabetic characters (letters).
+COUNT       --> "texts".count("t")          --> Returns the number of occurrences of the specified character ("t" in this case) in the string.
+
+REPLACE     --> "texts".replace("t", "g")   --> Replaces occurrences of the first specified character ("t") with the second specified character ("g"). It returns a new string with the replacements made. 
+                                                The original string remains unchanged. You must assign the result of str1.replace('\n', '') to the variable str1 to apply the changes.
+STRIP		--> "texts".strip()			    --> Used to remove leading and trailing whitespace characters from the string. Whitespace characters include spaces, tabs, newline characters, etc.
+											    If you provide an argument, it will remove that specific character from the beginning and end of the string.
+SPLIT		--> "texts".split("separator")	--> Splits the string based on the specified separator and returns a list of elements. The separator defines where the string should be split.
+                    #alternative use			x1 = 'john-kowalski-1995'
+                    #alternative use			first, name, age = x1.split('-')
+			        #alternative use			print(first) #--> OUTPUT:  'john'
+			
+JOIN		--> "separator".join(sekwencja) -->  Joins the elements of the sequence (e.g., list) into a single string using the specified separator ("separator"). It returns a new string
+
+end=""      --> In the expression print(symbol, end=""), end="" is an optional argument for the print() function. 
+                It specifies what should be printed after the current content. By default, print() ends each printed line with a newline character ("\n"), 
+                which means that subsequent print() calls will display on new lines. H
+                owever, using end="" tells the print() function not to add any extra character at the end, allowing the next print() calls to continue on the same line.
+				
+                
+                
+Useful Tip --> print("texts"*3)         --> His will print the string "text" three times, i.e., "texttexttext". It is achieved by using the multiplication operator *, 
+                                                 which duplicates the string specified by the number of times mentioned.

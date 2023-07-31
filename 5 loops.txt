@@ -1,0 +1,43 @@
+#Loop - Is used to iterate over a sequence (such as a list, tuple, string, or range) and perform a set of actions for each element in the sequence. 
+	  -  The loop continues until all elements in the sequence have been processed.
+#LOOP CONTROL STATEMENT
+	-break    -> It immediately terminates the whole loop, causing an immediate exit from the loop.
+	-continue -> It ends the current iteration of the loop and moves on to the next iteration
+	-pass	  ->  It is a placeholder statement that does nothing and is used as a no-operation (NOOP) statement.
+
+
+### WHILE LOOP -  It loops as long as a certain condition remains true.
+i = 0
+while i <10:
+    i +=1
+    print(i)
+
+
+### FOR LOOP -  It loops a specified number of times, and we know in advance how many times it will iterate.
+#			 -  The for loop is used to iterate over a sequence of objects, such as lists, tuples, strings, etc.
+#			 -  It can also be used to iterate over elements returned by an iterator.". 
+
+for i in range(10):
+    i +=1
+    print(i)
+ #albo
+for i in range(10):       # 1 parameter is STOP Specifies the value to stop sequence generation. Numbers are generated from zero to stop-1
+    print(i+1)
+    
+
+for i in range(10, 50):   #It will execute from the 10th iteration up to, but excluding, the 50th iteration(from 10 to 49)
+    print(i)              #The first parameter (10) is inclusive (it will be part of the iteration),
+						  #The second parameter (50) is exclusive (it will not be part of the iteration).
+    
+
+for i in range(1, 101):   #From 1 to 100 (inclusive)
+    if i % 2 != 0:        #If the result of dividing i by 2 gives a remainder other than 0, the loop will skip the current iteration and move to the next one.
+        continue          #It will just check if the given value is divided by 2
+    print(i)
+    
+    
+for i in range(10, 0, -1):  #The last parameter determines the STEP, which specifies the difference between consecutive elements in the generated sequence.
+    print(i)                #If the STEP is negative, the loop will go backward (in reverse order).
+                            #By default, if the last parameter (STEP) is not provided, it assumes a value of 1.
+                            #If you specify a value greater than 1 for the STEP parameter, the sequence will be generated with a larger step between elements.
+                            #For example, for range(x, y, 2), numbers will be generated with a step of 2.
