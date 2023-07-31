@@ -1,14 +1,17 @@
 import math
 ROUND 	--> round("value", x) 	  --> Rounds the value to the specified number of decimal places (x). 
                                       The first parameter is the value to be rounded, 
-									  The second parameter specifies to how many decimal places the value should be rounded.
+				      The second parameter specifies to how many decimal places the value should be rounded.
 CEIL    --> math.ceil("value")    --> Rounds the value up to the nearest integer. If the value is, for example, 3.14, it will be rounded to 4.
 FLOOR   --> math.floor("value")   --> Rounds the value down to the nearest integer. If the value is, for example, 3.14, it will be rounded to 3.
-ABS     --> abs.("value")         --> Returns the absolute value of the given value. The absolute value is the distance of the value from zero, irrespective of its sign.
+ABS     --> abs.("value")         --> Returns the absolute value of the given value. The absolute value is the distance of the value from zero, irrespective of its 
+                                      sign.
 POW     --> pow.("value", x)      --> Raises the value to the power of x. The first parameter is the base value, and the second parameter is the exponent.
 SQRT    --> math.sqrt(420)        --> Calculates the square root of the given value (in this case, 420).
-MAX     --> max("v1", "v2", "v3") --> Returns the highest value among the given set of values (v1, v2, v3). It can take multiple arguments to compare and return the maximum value.
-MIN     --> min("v1", "v2", "v3") --> Returns the lowest value among the given set of values (v1, v2, v3). It can take multiple arguments to compare and return the minimum value.
+MAX     --> max("v1", "v2", "v3") --> Returns the highest value among the given set of values (v1, v2, v3). It can take multiple arguments to compare and return the 
+                                      maximum value.
+MIN     --> min("v1", "v2", "v3") --> Returns the lowest value among the given set of values (v1, v2, v3). It can take multiple arguments to compare and return the 
+                                      minimum value.
 
 import time
 SLEEP   --> time.sleep(x)         --> Pauses the execution of the program for x seconds. It is useful for introducing delays in the program's execution
