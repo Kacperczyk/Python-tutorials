@@ -17,9 +17,9 @@ STRIP	   --> "texts".strip()	           --> Used to remove leading and trailing 
 					       If you provide an argument, it will remove that specific character from the beginning and end of the string.
 SPLIT	   --> "texts".split("separator")  --> Splits the string based on the specified separator and returns a list of elements. 
                                                The separator defines where the string should be split.
-                          #alternative use  -->	x1 = 'john-kowalski-1995'
-                          #alternative use  -->	first, name, age = x1.split('-')
-		          #alternative use  -->	print(first)    #--> OUTPUT:  'john'
+                          #alternative use --> x1 = 'john-kowalski-1995'
+                          #alternative use --> first, name, age = x1.split('-')
+		          #alternative use --> print(first)    #--> OUTPUT:  'john'
 			
 JOIN   	   --> "separator".join(sekwencja) -->  Joins the elements of the sequence (e.g., list) into a single string using the specified separator ("separator"). 
                                                 It returns a new string
