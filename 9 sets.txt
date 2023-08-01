@@ -1,0 +1,33 @@
+#Sets
+- Sets are created using  curly braces {}
+- Are data structures that store unique elements in an unordered manner.
+- Sets do not store duplicates (they automatically remove duplicates, so each element in the set is unique).
+- They do not preserve the original order of adding elements.
+- You cannot change individual elements, but you can add new elements or remove existing ones.
+
+
+set1= {"fork","spoon","knife"}
+set2 = {"bowl","plate","cup","knife"}
+
+# ADD            --> set1.add("text")               --> add an element
+# REMOVE         --> set1.remove("text")            --> remove an element
+# CLEAR          --> set1.clear()                   --> remove all elements
+# UPDATE         --> set1.update(set2)              --> add set2 to set1 (all elements from set2 will be added to set1)
+
+
+# UNION          --> set3 = set1.union(set2)        --> create a new set that contains elements from set1 and set2 [SUM]
+# DIFFERENCE     --> set1.difference(set2)          --> [DIFFERENCE] (returns elements that are in set1 but not in set2)
+# INTERSECTION   --> set1.intersection(set2)        --> [INTERSECTION] (returns elements that are both in set1 and set2)
+# SYMMETRIC_DIFFERENCE --> set1.symmetric_difference(set2)  --> [SYMMETRIC DIFFERENCE] (returns elements that are in set1 but not in set2,
+																and those elements that are in set 2 but not in set 1
+
+OPERACJE NA ZBIORACH: #Zbiory obsługują różne operacje logiczne, które można wykonywać przy użyciu odpowiednich operatorów lub metod.
+
+# UNION          --> set1 | set2    [UNION]         --> the result will be {0, 1, 2, 3, 4, 5, 6}
+# DIFFERENCE     --> set1 - set2    [DIFFERENCE]    --> the result will be {0, 1, 2}
+# INTERSECTION   --> set1 & set2    [INTERSECTION]  --> the result will be {4, 5}
+# SYMMETRIC_DIFFERENCE --> set1 ^ set2    [SYMMETRIC_DIFFERENCE] --> the result will be {0, 1, 2, 5, 6}
+
+set1 = {0, 1, 2, 3, 4}
+set2 = {3, 4, 5, 6}
+

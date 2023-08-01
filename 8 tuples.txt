@@ -1,0 +1,37 @@
+#Tuples: 
+ - Tuples are created using parentheses () or without any parentheses by simply separating elements with commas
+ - Are data structures that store a collection of elements in a specific order.
+ - Similar to lists, tuples can contain various data types, such as numbers, strings, and objects.
+ - Tuples are immutable, which means that once created, they cannot be modified.
+ - Tuples are generally more memory-efficient than lists because of their immutability. This can be beneficial when you have a large collection of data that should not be changed.
+ 
+tuple1 = ("Kamil", "Kacperczyk", 21)
+
+
+# INDEX --> tuple1.index("text") --> returns the index of the first occurrence of the specified element in the tuple.
+# COUNT --> tuple1.count("text") --> counts the occurrences of the specified element in the tuple.
+# LEN   --> len(tuple1)          --> returns the number of elements in the given tuple.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+x

@@ -1,0 +1,31 @@
+# lists:
+ - Lists are created using square brackets []
+ - Lists are dynamic data structures that can store multiple elements in a specific order (they store collections of data).
+ - They can be modified, appended, removed, and sorted.
+ - Tuples are created using []
+
+list1 = ["Kamil", "Kacperczyk", 21]
+
+# APPEND   --> lists.append("text") --> adds an element to the end of the list
+# REMOVE   --> lists.remove("text") --> removes the first occurrence of the specified element from the list
+# POP      --> lists.pop(x) --> removes the element at the given index (by default, removes the last element)
+# INSERT   --> lists.insert(x, "text") --> inserts an element at the specified position (x is the index)
+# SORT     --> lists.sort() --> sorts the list in ascending order
+# CLEAR    --> lists.clear() --> removes all elements from the list
+# EXTEND   --> list1.extend(list2) --> extends the list by adding elements from another iterable object
+# INDEX    --> list1.index("text") --> returns the index of the first occurrence of the specified element in the list
+# COUNT    --> list1.count("text") --> counts the occurrences of the specified element in the list
+# REVERSE  --> list1.reverse() --> reverses the order of elements in the list.
+# LEN      --> len(list1) --> returns the number of elements in the given list
+
+#2D lists is  a list of lists
+#EXAMPLE:
+
+drinks = ["coffee","soda","tea"]
+dinner = ["pizza","hamburger","hotdog"]
+dessert = ["cake","ice cream"]
+
+food = [drinks,dinner,dessert]
+
+print(food[0])		--> displays the elements of the first list (in this case, the elements of 'drinks')
+print(food[0], [0]) --> displays the first element of the first list (in this case, 'coffee')
