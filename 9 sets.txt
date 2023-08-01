@@ -19,7 +19,7 @@ set2 = {"bowl","plate","cup","knife"}
 # DIFFERENCE     --> set1.difference(set2)          --> [DIFFERENCE] (returns elements that are in set1 but not in set2)
 # INTERSECTION   --> set1.intersection(set2)        --> [INTERSECTION] (returns elements that are both in set1 and set2)
 # SYMMETRIC_DIFFERENCE --> set1.symmetric_difference(set2)  --> [SYMMETRIC DIFFERENCE] (returns elements that are in set1 but not in set2,
-																and those elements that are in set 2 but not in set 1
+											and those elements that are in set 2 but not in set 1)
 
 OPERACJE NA ZBIORACH: #Zbiory obsługują różne operacje logiczne, które można wykonywać przy użyciu odpowiednich operatorów lub metod.
 
