@@ -11,13 +11,13 @@ dict1 = {"name": "Jan",
 		 "city": "Warsaw"}
          
 # GET     --> dict1.get("key1")   --> Returns the value corresponding to the given key. If the key doesn't exist, it returns the default value
-#                                          (if it was provided as the second argument) | get(key, default)
+#                                     (if it was provided as the second argument) | get(key, default)
 # KEYS    --> dict1.keys()        --> Returns a view containing all the keys of the dictionary.
 # VALUES  --> dict1.values()      --> Returns a view containing all the values of the dictionary.
 # ITEMS   --> dict1.items()       --> Returns a view containing the key-value pairs of the dictionary as tuples.
 # CLEAR   --> dict1.clear()       --> Removes all elements from the dictionary, leaving it empty.
 # POP     --> dict.pop("key1")    --> Removes the element with the given key (the key itself will also be removed from the dictionary) and returns its value.
-#                                          If the key doesn't exist, it can return a default value (if provided as the second argument).
+#                                     If the key doesn't exist, it can return a default value (if provided as the second argument).
 # UPDATE  --> dict1.update(dict2) --> Updates the dictionary, adding key-value pairs from another dictionary or sequence of tuples.
 #         --> dict1.update({"key1": "value1"}) --> Adds a new key-value pair to the dictionary or updates the value for an existing key.
 
