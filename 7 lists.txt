@@ -27,5 +27,5 @@ dessert = ["cake","ice cream"]
 
 food = [drinks,dinner,dessert]
 
-print(food[0])		    --> displays the elements of the first list (in this case, the elements of 'drinks')
-print(food[0], [0]) --> displays the first element of the first list (in this case, 'coffee')
+print(food[0])		     --> displays the elements of the first list (in this case, the elements of 'drinks')
+print(food[0], [0])  --> displays the first element of the first list (in this case, 'coffee')
