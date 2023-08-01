@@ -14,8 +14,10 @@ for x in range(rows):
    
 # Description:
 - The user is prompted to enter the number of rows (rows variable), the number of columns (columns variable), and a symbol (symbol variable) to use for the pattern.
-- The outer loop is represented by for x in range(rows):. This loop will iterate rows number of times. For each iteration of the outer loop, the inner loop will execute completely.
-- The inner loop is represented by for y in range(columns):. This loop will iterate columns number of times. For each iteration of the inner loop, the specified symbol will be printed (print(symbol, end="")).
+- The outer loop is represented by for x in range(rows):. This loop will iterate rows number of times. For each iteration of the outer loop, the inner loop will 
+  execute completely.
+- The inner loop is represented by for y in range(columns):. This loop will iterate columns number of times. For each iteration of the inner loop, the specified 
+  symbol will be printed (print(symbol, end="")).
 - The end="" argument in the print() function is used to ensure that the symbols are printed side by side in the same row, without a new line after each symbol.
 - After each iteration of the inner loop, the print() function without any arguments is used to move to the next line, creating a new row for the pattern.
 
