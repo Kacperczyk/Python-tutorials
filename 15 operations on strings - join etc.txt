@@ -1,0 +1,40 @@
+#########
+# JOIN
+# join() jest używana do połączenia (łączenia) elementów sekwencji w jedną ciągłą wartość. 
+# Metoda join() jest dostępna dla obiektów typu str i przyjmuje jako argument sekwencję, na przykład listę lub krotkę.
+
+sekwencja = ['Hello', 'world', '!', 'This', 'is', 'join']
+separator = ' '
+
+nowy_ciag = separator.join(sekwencja)
+print(nowy_ciag)	#OUTPPUT --> 'Hello world! This is join'
+
+#W tym przykładzie, mamy listę sekwencja zawierającą kilka słów. 
+#Następnie definiujemy zmienną separator jako spacje. 
+#Wywołujemy metodę join(separator) na zmiennej separator, przekazując do niej listę sekwencja
+
+#Metoda join() łączy wszystkie elementy z listy sekwencja oddzielając je separatorem, którym jest spacja w tym przypadku. 
+#Wynikiem jest nowy ciąg znaków 'Hello world! This is join' 
+#który jest efektem połączenia wszystkich elementów sekwencji oddzielonych separatorem.
+########
+
+
+#REPLACE -->zastępuje dany znak/ciąg znaków innym
+print("Witaj Świecie").replace("Witaj", "Cześć") #-->OUTPPUT "Cześć Świecie"
+########
+#STARTSWITH --> zwraca True lub False w zależności od tego ciąg znaków zaczyna się od tego co podaliśmy jako argument 
+print("To jest zdanie").startswith("To") #--> OUTPPUT Zwróci True
+########
+#ENDSWITH --> zwraca True lub False w zależności od tego ciąg znaków kończy się od tego co podaliśmy jako argument 
+print("To jest zdanie").endswith("To") #--> OUTPPUT Zwróci False
+########
+#UPPER --> --> Wszystkie litery w ciągu znaków zamieni na duże 
+print("To jest zdanie").upper()) #--> OUTPPUT "TO JEST ZDANIE"
+########
+#LOWER --> --> Wszystkie litery w ciągu znaków zamieni na małe 
+print("To jest zdanie").lower()) #--> OUTPPUT "to jest zdanie"
+########
+
+
+
+

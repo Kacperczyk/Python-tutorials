@@ -1,0 +1,18 @@
+#Keyword arguments:
+ - Also known as named arguments or keyword parameters, are a mechanism for passing arguments to a function
+   where arguments are assigned using their names (keys) instead of their order.
+   ( that allow you to pass arguments to a function by explicitly specifying the parameter names along with their values)
+   This allows for more readable and flexible function calls.
+ - By using keyword arguments, we can control which arguments are passed to a function and in what order, 
+   which can be particularly useful when functions have many arguments with default values, 
+   or when we do not want to rely on the order of arguments when calling the function.
+ - In Python, you define a function with parameters, and each parameter has a default name. 
+   When you call the function, you can provide the arguments using the parameter names followed by an equal sign (=) and the corresponding values.
+
+
+
+def greet(name, message):
+    print(f"Hello, {name} {message}")
+
+greet(message="kamil", name="kacperczyk")    #Here, you can provide the arguments out of order but assign them using keywords, and it will be displayed as you want.
+:OUTPUT "Hello, kacperczyk kamil"

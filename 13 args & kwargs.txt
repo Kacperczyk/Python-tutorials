@@ -1,0 +1,37 @@
+# *ARGS:   
+ - Is a special parameter that will pack all arguments into a tuple. 
+   It is useful so that a function can accept a varying number of non-key arguments (also known as positional arguments)
+
+ - It allows you to introduce any number of non-key arguments (i.e., position arguments).
+ - The parameter name must start with star (*) but the actual name can be anything except "args" or "variables
+
+
+def add(*args):
+    sum = 0
+    for i in args:
+        sum += i
+    return sum
+print(add(1,2,3,4,5,6,7,8))         # --> it will sum all these numbers together
+
+
+def printing(*args):
+    print(args)                                                                         #GWIAZDKA TUTAJ v
+printing('o', 'k') # --> OUTPUT: shows us a tuple -->('o', 'k') | If you provide 'print(*args') to the function it won't display it as a tuple
+
+
+
+
+# **KWARGS
+ - Is a special parameter that will pack all arguments into a dictionary. 
+   It is useful so that a function can accept a varying number of key-value arguments (keyword arguments).
+
+ - It allows you to introduce any number of key arguments.
+ - This parameter "packs" all the arguments into a dictionary.
+ - The parameter name must start with a double star (**) but the actual name can be anything except "args" or "variables
+
+
+def hello(**kwargs):
+    print("Hello",end=" ")
+    for key,value in kwargs.items():
+        print(value,end=" ")
+hello(title="Mr.",first="Bro",middle="Dude",last="Code") # --> OUTPUT: 'Hello Mr. Bro Dude Code'

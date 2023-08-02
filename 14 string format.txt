@@ -1,0 +1,13 @@
+# .format() --> metoda która daje użytkowniki więcej kontroli przy wyświetlaniu output
+#
+name = 'Kamil'
+age = 30
+print("Nazywam się " +name+ " i mam "+str(age)+ " lat")  #Da się to zapisać o wiele łatwiej i szybciej na dole pokazane jak wkorzystać .format()
+
+print("Nazywam się {} i mam {} lat".format("Kamil", 30)) #--> .format()
+print("Nazywam się {} i mam {} lat".format(name, age))   #--> .format() tylko ze zmiennymi zamiast od razu wartościami
+print("Nazywam się {0} i mam {1} lat".format(name, age)) #--> .format() #POSTITIONAL ARGUMENTS -indeksy wskazują odpowiednie pozycje argumentów
+print("Nazywam się {name} i mam {age} lat".format(name="Kamil", age=30)) #--> .format() #KEYWORD ARGUMENTS
+
+print(f'Nazywam się {name} i mam {age} lat')             #--> f''   
+

@@ -1,0 +1,41 @@
+#Functions 
+ - A reusable block of code that performs a specific task and can be called from different parts of the program.
+ - A block of code which is executed only when it is called.
+ 
+ - ARGUMENTS in function is the actual value passed to a function when it is called. 
+   Arguments are the specific data provided to the function for its operation.
+   
+ - RETURN The value or values that a function produces and sends back to the caller. 
+   The return statement ends the function's execution and sends the specified value(s) back to the calling code.
+   
+ - DEFAULT PARAMTERE - a parameter that has a preset value, which is used if the caller does not provide a specific argument for that parameter.
+ 
+ - RECURSION - a technique in which a function calls itself to solve a smaller version of the problem, breaking it down into smaller sub-problems.
+
+1)
+def hello():            # --> The simplest possible function with no arguments
+    print('Hello')  
+hello() # function call
+
+2)
+def hello(name):        # --> Function with 1 arguments - 
+    print('Hello' +name)  
+hello('Kamil') #function call
+
+3)
+def hello(first_name, last_name):  #--> function with 2 arguments
+hello('Kamil', 'Kacperczyk') #function call
+
+4)
+def add(a, b):        # --> function with 2 arguments and return
+    sum = a + b
+    return sum
+print(add(5+4)) #function call
+
+5)
+def si(x):      # --> recursive function - a function that calls itself
+    if x <= 1:
+        return 1
+    else:
+        return x * si(x-1)       
+print(si(5)) #function call  # --> important that the recursion tends to the default case ( x <=__ )
