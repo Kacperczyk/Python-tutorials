@@ -1,5 +1,5 @@
 # .format() --> metoda która daje użytkowniki więcej kontroli przy wyświetlaniu output
-#
+
 name = 'Kamil'
 age = 30
 print("Nazywam się " +name+ " i mam "+str(age)+ " lat")  #Da się to zapisać o wiele łatwiej i szybciej na dole pokazane jak wkorzystać .format()
