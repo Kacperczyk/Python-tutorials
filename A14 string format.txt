@@ -1,13 +1,33 @@
-# .format() --> metoda która daje użytkowniki więcej kontroli przy wyświetlaniu output
+#format() -->  method provides users with more control when displaying output
+ - It is a string method in Python that allows you to format and insert values into a string. I
+   It provides a versatile and flexible way to create strings with dynamic content. 
+   The .format() method is especially useful when you want to combine static text with variable data.
+   
+ - Curly Braces {}: In a string, you use curly braces {} as placeholders for the values you want to insert.
+ - .format(): You call the .format() method on the string and provide the values you want to insert into the placeholders.
+ - Positional Arguments: By default, the .format() method takes positional arguments in the order they appear and 
+   assigns them to the corresponding placeholders based on their position.
+ - Keyword Arguments: You can also use keywords in the curly braces to specify which arguments should be inserted into which placeholders. 
+   This provides more control over the formatting.
 
+EXAMPLES:
 name = 'Kamil'
 age = 30
-print("Nazywam się " +name+ " i mam "+str(age)+ " lat")  #Da się to zapisać o wiele łatwiej i szybciej na dole pokazane jak wkorzystać .format()
+print("My name is " +name+ " and i have "+str(age)+ " years ols")  #You can achieve the same output with .format() as shown below:
 
-print("Nazywam się {} i mam {} lat".format("Kamil", 30)) #--> .format()
-print("Nazywam się {} i mam {} lat".format(name, age))   #--> .format() tylko ze zmiennymi zamiast od razu wartościami
-print("Nazywam się {0} i mam {1} lat".format(name, age)) #--> .format() #POSTITIONAL ARGUMENTS -indeksy wskazują odpowiednie pozycje argumentów
-print("Nazywam się {name} i mam {age} lat".format(name="Kamil", age=30)) #--> .format() #KEYWORD ARGUMENTS
-
-print(f'Nazywam się {name} i mam {age} lat')             #--> f''   
-
+print("My name is {} and i have {} years ols".format("Kamil", 30)) #--> .format()
+print("My name is {} and i have {} years ols".format(name, age))   #--> .format() with variables instead of direct values
+print("My name is {0} and i have {1} years ols".format(name, age)) #--> .format() with positional arguments - indexes indicate the positions of arguments
+print("My name is {name} and i have {age} years ols".format(name="Kamil", age=30)) # .format() with keyword arguments
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+#f-string:
+ - That provides a concise and convenient way to create formatted strings. 
+   It allows you to embed expressions directly inside string literals using curly braces {}. 
+   When an f-string is encountered, Python evaluates the expressions within the curly braces and replaces them with their corresponding values at runtime.
+   
+ - Prefixing with 'f': To create an f-string, you prefix the string literal with the letter 'f' or 'F'.
+ - Expression Inside Curly Braces: Inside the f-string, you can embed expressions, variables, and even function calls within curly braces {}.
+ - Placeholder: The expressions inside the curly braces serve as placeholders for their corresponding values. 
+   
+#EXAMPLE:
+print(f'My name is {name} and i have {age} years ols') #-->  f-string - formatted string literals
