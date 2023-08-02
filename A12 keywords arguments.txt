@@ -9,8 +9,6 @@
  - In Python, you define a function with parameters, and each parameter has a default name. 
    When you call the function, you can provide the arguments using the parameter names followed by an equal sign (=) and the corresponding values.
 
-
-
 def greet(name, message):
     print(f"Hello, {name} {message}")
 
