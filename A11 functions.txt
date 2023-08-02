@@ -4,7 +4,7 @@
  
  - ARGUMENTS in function is the actual value passed to a function when it is called. 
    Arguments are the specific data provided to the function for its operation.
-   
+
  - RETURN The value or values that a function produces and sends back to the caller. 
    The return statement ends the function's execution and sends the specified value(s) back to the calling code.
    
