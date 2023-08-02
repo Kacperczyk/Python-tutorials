@@ -19,8 +19,6 @@ def printing(*args):
 printing('o', 'k') # --> OUTPUT: shows us a tuple -->('o', 'k') | If you provide 'print(*args') to the function it won't display it as a tuple
 
 
-
-
 # **KWARGS
  - Is a special parameter that will pack all arguments into a dictionary. 
    It is useful so that a function can accept a varying number of key-value arguments (keyword arguments).
