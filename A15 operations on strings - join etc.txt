@@ -1,0 +1,32 @@
+# JOIN
+  - Is used to concatenate elements of a sequence into a single continuous value.
+  - join() method is available for string objects and takes a sequence (for example: list or tuple) as an argument.
+
+#EXAMPLE:
+sequence  = ['Hello', 'world', '!', 'This', 'is', 'join']
+separator = ' '
+
+new_string = separator.join(sequence)
+print(new_string)  # OUTPUT --> 'Hello world! This is join'
+
+ - In this example, we have a list sequence containing several words. 
+ - Then we define the variable separator as a space. We call the join(separator) method on the variable separator, passing the list sequence to it.
+
+ - The join() method concatenates all the elements from the sequence, separating them with the separator, which is a space in this case. 
+  - The result is a new string 'Hello world! This is join', which is the outcome of joining all elements of the sequence separated by the separator.
+
+
+# replace()    --> is used to substitute a given character or substring with another.
+print("Hello world").replace("Hello", "Good morning") #OUTPPUT: "Good morning world"
+
+# startswith() --> returns True or False depending on whether the string starts with the argument provided.
+print("This is string").startswith("This") #OUTPPUT: will return True
+
+# endswith()   --> endswith() returns True or False depending on whether the string ends with the argument provided.
+print("This is string").endswith("This")   # OUTPUT: will return False
+
+# upper()      --> converts all letters in the string to uppercase. 
+print("This is string").upper())           # OUTPUT: "THIS IS STRING"
+
+# lower()      --> converts all letters in the string to lowercase.
+print("This is string").lower())           # OUTPUT: "to jest zdanie"
