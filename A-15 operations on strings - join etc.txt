@@ -13,7 +13,7 @@ print(new_string)  # OUTPUT --> 'Hello world! This is join'
  - Then we define the variable separator as a space. We call the join(separator) method on the variable separator, passing the list sequence to it.
 
  - The join() method concatenates all the elements from the sequence, separating them with the separator, which is a space in this case. 
-  - The result is a new string 'Hello world! This is join', which is the outcome of joining all elements of the sequence separated by the separator.
+ - The result is a new string 'Hello world! This is join', which is the outcome of joining all elements of the sequence separated by the separator.
 
 
 # replace()    --> is used to substitute a given character or substring with another.
