@@ -1,0 +1,10 @@
+import random
+
+RANDINT   --> random.randint(1, 10)        --> Generates a random integer from 1 to 10 (inclusive).
+RANDOM    --> random.random() 	   		   --> Returns a random float number from [0, 1), meaning a floating-point number from 0 (inclusive) to 1 (exclusive).
+CHOICE    --> random.choice(['x','d'])     --> Used to randomly select one element from a given sequence like lists, tuples, or strings.
+SHUFFLE   --> random.shuffle(li1)	       --> Used to randomly shuffle the elements in a sequence. In this example, we'll get the same list but with elements in random order.
+RANDRANGE --> random.randrange(10, 100, 5) --> Generates a random integer from the given range. It can take three arguments (start, stop, step).
+UNIFORM   --> random.uniform(1.5, 3.5)     --> Ggnerates a random float number rom the given range.
+SAMPLE    --> random.sample(sequence, k)   --> Is used to randomly sample k unique elements from a given sequence (list, tuple, or string). 
+                                               It returns a new list with the sampled elements.

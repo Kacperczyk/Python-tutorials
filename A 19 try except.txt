@@ -1,0 +1,29 @@
+#try-except 
+ - block is used for handling exceptions. It allows the program to capture and manage exceptions that may occur during the execution of code.
+ 
+ 
+ - try     --> In this block, we place the code that may raise an exception. 
+               If an exception is raised during the execution of this code, the program goes to the corresponding except block.
+
+ - except  --> This block defines how the program should handle the raised exception. 
+               We can specify a specific type of exception (e.g., ExceptionType1) to be caught by this block. 
+			   We can also use a general except block, which catches all types of exceptions. 
+			   If the raised exception matches any of the except blocks, the code in that block will be executed.
+
+ - else    -->( optional) - This block will be executed if no exceptions are raised in the try block. 
+              It is a place where we can put code that needs to be executed when no exceptions occurred.
+
+ - finally -->( optional) - This block will be executed always, regardless of whether an exception occurred or not. 
+              We can place code here that must be executed, regardless of the occurrence of exceptions (e.g., closing a file, database operations).
+
+###Typically, only the try and except blocks are used, and the rest are optional.###
+
+#EXAMPLE:
+try:
+# Code that may raise an exception
+except:
+# Code to handle a general exception
+else:
+# Code to be executed if no exceptions occurred
+finally:
+# Code that will always be executed, regardless of exceptions

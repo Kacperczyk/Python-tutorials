@@ -1,0 +1,33 @@
+#List comprehension: 
+ - [expression for element in sequence condition]
+ - it allow to create lists in a single line of code. It offers a more compact alternative to using traditional for loops when generating lists.
+ 
+ - expression: An operation or computation performed on each element in the sequence to create the desired output for the new list.
+ - element: A variable that represents the current element from the sequence being iterated.
+ - The collection of elements (e.g., list, tuple, set) from which the elements are taken.
+ - condition (optional): A condition that filters elements from the sequence, and only elements that satisfy the condition are included in the new list.
+
+#EXAMPLE 1:
+numbers = [1, 2, 3, 4, 5]
+multiply = [i*2 for i in numbers]    #It will create new listy with the elements from first list multiplied by 2
+
+#EXAMPLE 2:
+li2 = [i for i in range(11) if i % 2 == 0] #Generates a new list li2 that contains only the even numbers from 0 to 10. Any only those numbers which are even.
+
+
+#If at the beginning (Filtering):
+ - When the if condition is placed at the beginning of the list comprehension, 
+   it filters the elements and includes only those that satisfy the condition in the new list.
+#EXAMPLE:
+numbers = [1, 2, 3, 4, 5, 6]
+even_numbers = [x for x in numbers if x % 2 == 0] #-->Output: [2, 4, 6]
+
+
+#If at the end (Conditional Expression / Transformation):
+ - When the if condition is placed at the end of the list comprehension, it allows for transformation based on the condition. 
+   Depending on whether the condition is met or not, either the element remains unchanged or an alternative expression is included in the new list.
+#EXAMPLE:
+numbers = [1, 2, 3, 4, 5, 6]
+result = [x if x % 2 == 0 else "odd" for x in numbers] #-->Output: ['odd', 2, 'odd', 4, 'odd', 6]
+
+

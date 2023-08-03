@@ -1,0 +1,11 @@
+import os
+
+path = "C:\\Users\\User\\Desktop\\test.txt" #Ścieżka do pliku
+
+
+EXIST  --> os.path.exists(path) --> Checks the existence of a specified path in the file system and returns a boolean value True/False.
+
+ISFILE --> os.path.isfile(path) --> Checks if something is a file and returns a boolean value True/False.
+
+ISDIR  --> os.path.isdir(path)  --> Used to check whether a specified path points to a directory (folder) and returns a boolean value True/False.
+

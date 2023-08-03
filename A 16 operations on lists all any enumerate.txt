@@ -1,0 +1,66 @@
+# all() 
+  - is a built-in Python function that takes an iterable (e.g., a list, tuple, set) as its argument
+  - returns True if all the elements in the iterable are considered "truthy" (non-empty, non-zero, non-False, non-None, and non-empty collections). 
+  - If any element in the iterable is considered "falsy," the function returns False.
+  
+  -In other words, all() checks if all the elements in the iterable evaluate to True. If all elements are truthy, it returns True. If any element is falsy, it returns False.
+
+#EXAMPLE 1:
+li = [10,20,30,40,50]
+all([i%2 == 0 for i in li])     #--> It will return True if all elements in li will be even numbers.
+
+#EXAMPLE 2:
+li1 = [1,2,3,4,5]
+li2 = [5, 2]
+if all(i in li1 for i in li2):  #--> Checks if each element from the list li2 is also an element of the list li1 and prints "True" if that is the case.         
+    print("True")
+
+
+# any()
+ - is another built-in Python function that is used to determine if any element in an iterable (e.g., list, tuple, set) is "truthy". 
+ - it returns True if at least one element in the iterable evaluates to True. 
+ - If all elements in the iterable are "falsy," the function returns False.
+
+#EXAMPLE 1:
+li = [10,20,30,40,50]
+all([i%2 == 0 for i in li])     #--> It will return True if at least one item in li will be even number 
+
+#EXAMPLE 2:
+li1 = [1,2,3,4,5]
+li2 = [5, 2]
+if any(i in li1 for i in li2):  #--> the code checks if any element from the list li2 is also an element of the list li1. 
+                                #    If at least one element from li2 is present in li1, it prints "True". 
+                                #    If none of the elements from li2 are found in li1, nothing will be printed.           
+    print("True")
+
+
+# ennumerate 
+ - is a built-in Python function that allows you to iterate over an iterable (e.g., list, tuple, string)
+ - return both the index and the corresponding value of each element during iteration.
+
+#EXAMPLE 1:
+li1 = ['apple', 'banana', 'cherry']
+for i in enumerate(li1):
+    print(i)
+#OUTPUT:
+# (0, 'apple')
+# (1, 'banana')
+# (2, 'cherry')
+
+#EXAMPLE 2:
+for i in enumerate(li1):
+    print(i[0], i[1])
+#OUTPUT    
+# 0 apple
+# 1 banana
+# 2 cherry
+
+#EXAMPLE 3:
+li1 = ['apple', 'banana', 'cherry']
+li1 = ['apple', 'banana', 'cherry']
+for i, j in enumerate(li1):
+    print(i, j)
+#OUTPUT    
+# 0 apple
+# 1 banana
+# 2 cherry
