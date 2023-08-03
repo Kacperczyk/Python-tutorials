@@ -3,7 +3,7 @@
   - returns True if all the elements in the iterable are considered "truthy" (non-empty, non-zero, non-False, non-None, and non-empty collections). 
   - If any element in the iterable is considered "falsy," the function returns False.
   
-  -In other words, all() checks if all the elements in the iterable evaluate to True. If all elements are truthy, it returns True. If any element is falsy, it returns False.
+  - In other words, all() checks if all the elements in the iterable evaluate to True. If all elements are truthy, it returns True. If any element is falsy, it returns False.
 
 #EXAMPLE 1:
 li = [10,20,30,40,50]
