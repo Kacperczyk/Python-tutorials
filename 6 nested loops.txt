@@ -1,6 +1,6 @@
 # Nested loops refer to the situation where you have one loop inside another loop. 
-The inner loop will complete all its iterations before the outer loop finishes one iteration. 
-This means that for each iteration of the outer loop, the inner loop will run completely through all its iterations.
+ - The inner loop will complete all its iterations before the outer loop finishes one iteration. 
+ - This means that for each iteration of the outer loop, the inner loop will run completely through all its iterations.
 
 # Example: 
 rows = int(input("Enter the # of rows: "))
