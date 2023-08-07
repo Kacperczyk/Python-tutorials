@@ -41,7 +41,7 @@ with open('kamile.txt', 'r') as f:
     csv_reader = csv.DictReader(f)      
 
     for line in csv_reader:         # Treats the first row as column headers and returns an ordered dictionary
-        print(line)                 # print(line['email'] If you typ this it will print only values from key 'email' 
+        print(line)                 # print(line['email'] If you type this it will print only values from key 'email' 
 #------------------------------------------------------------------------------------------------------------------------------------     
 # DICTWRITER --> Provides functionality to write CSV data in the form of dictionaries,
 			     where keys are column headers and values are corresponding fields.
