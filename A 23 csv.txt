@@ -1,0 +1,120 @@
+import csv
+
+# MODULE CSV: 
+ - The csv module is a built-in library in Python that enables easy operations on CSV (Comma-Separated Values) 
+   (files which are text files where data is separated by a delimiter, often a comma.)
+
+
+
+# READER --> Allows reading data from a CSV file. It enables iteration through rows and reading individual fields in each row.
+#Example: 
+with open('persons.txt', 'r') as f:
+    csv_reader = csv.reader(f)      #It will display the contents of the file as a list (if we add a loop iteration over the file)
+    for line in csv_reader:         #Automatically recognizes the field separator (,) in the CSV file and splits the fields accordingly.
+        print(line)                 
+#-----------------------------------------------------------------------
+#-----------------------------------------------------------------------
+     
+# WRITER --> Allows writing data to a CSV file. It facilitates writing individual rows and automatically formats fields and special characters.
+ - newline=''    --> Specifies the newline character used to end each row in the CSV file.
+ - delimiter='-' --> Specifies the character or string used to separate fields in the CSV file.
+ - quotechar     --> Specifies the character used to enclose fields in the CSV file when they contain special characters like the field separator or newline characters.
+              
+             writerow(row)   --> This method write a single row to a CSV file. 
+                                 It takes as an argument a list of values representing the fields in a given row. 
+                                 Each value will be automatically converted to the appropriate format and separated by a field separator, comma by default.
+             writerows(rows) --> This method is used to save multiple rows at once to a CSV file.
+                                 It takes a list of lists as an argument, where each list represents a row, and its elements are the values of individual fields
+#Example:          
+with open('kamile.txt', 'r') as f:
+    csv_reader = csv.reader(f)
+
+    with open('kamile2.txt', 'w', newline='') as f2:    #newline='' --> eliminates newlines between lines     
+        csv_writer = csv.writer(f2, delimiter='=')      #delimiter='-'  --> specifies the character with which to separate elements/columns
+
+        for line in csv_reader:
+            csv_writer.writerow(line)
+#-----------------------------------------------------------------------
+#-------------------------------z----------------------------------------
+    
+# DICTREADER --> Provides functionality to read CSV data in the form of dictionaries,
+                 where keys are column headers and values are corresponding fields.
+                 - csv.DictReader(file_name, fieldnames=None, dialect='excel')
+  
+ with open('kamile.txt', 'r') as f:
+    csv_reader = csv.DictReader(f)      
+
+    for line in csv_reader:         # Treats the first row as column headers and returns an ordered dictionary
+        print(line)                 # print(line['email'] If you typ this it will print only values from key 'email' 
+#-----------------------------------------------------------------------
+#-----------------------------------------------------------------------
+       
+# DICTWRITER --> Provides functionality to write CSV data in the form of dictionaries,
+			     where keys are column headers and values are corresponding fields.
+				 - csv.DictReader(file_name, fieldnames=None, dialect='excel')		 
+                   - file_name    --> file object from which the CSV data will be read.
+                   - fieldnames   --> an optional parameter that you can use to set your own column headers.
+                                       - if not specified, the column headers will be taken from the first row of the CSV file.
+                  - dialect       --> optional parameter that specifies the CSV dialect to use (default excel)
+	
+ - writeheader() --> saves a row of column headers to a CSV file.
+ - del ['column_name'] --> If you have several columns and you don't want to display some of them, remove it from fieldnames and then use del['column name']
+                           #example:
+                                    for line in csv_reader:
+									    del line['last_name']
+									    csv_writer.writerow(line)
+
+#example 1): 
+# This code reads the contents of the CSV file from 'kamile.txt' and then writes the same data, but separated by -, to 'kamile2.txt'.    
+   with open('kamile.txt', 'r') as f:
+    csv_reader = csv.DictReader(f)
+
+    with open('kamile2.txt', 'w', newline='') as f2:
+        fieldnames = ['first_name', 'last_name', 'email']
+        csv_writer = csv.DictWriter(f2,fieldnames=fieldnames, delimiter='-')
+        
+        csv_writer.writeheader()
+        
+        for line in csv_reader:
+            csv_writer.writerow(line) 
+			
+#example 2): 
+#This code reads data from file 'TESTS_N' and writes only column 'first_name' to new file 'TESTS_N2'
+- In this code, we are not removing the 'last_name' column directly from the original data.
+- Instead, when writing to the file 'TESTS_N2', we create a new dictionary containing only the key 'first_name'
+  and the value corresponding to that column from the original data.
+- This means that the file 'TESTS_N2' will contain only the data from the 'first_name' column, but the original file 'TESTS_N' remains unchanged
+
+with open('TESTY_N', 'r') as f:
+    csv_reader = csv.DictReader(f)
+
+    with open('TESTY_N2', 'w', newline='') as f2:
+        fieldnames = ['first_name']
+        csv_writer = csv.DictWriter(f2, fieldnames=fieldnames)
+
+        csv_writer.writeheader()
+
+        for line in csv_reader:
+            csv_writer.writerow({'first_name': line['first_name']})
+			
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------
+#example 3):
+ - In this code, deleting the 'last_name' column is done directly on the line dictionary using the del line['last_name'] statement.
+ - This means that the column 'last_name' is removed from the original data read from the file 'TESTS_N'.
+ - The file 'TESTS_N2' will contain only data from the 'first_name' column.
+
+with open('TESTY_N', 'r') as f:
+    csv_reader = csv.DictReader(f)
+
+    with open('TESTY_N2', 'w', newline='') as f2:
+        fieldnames = ['first_name']
+        csv_writer = csv.DictWriter(f2, fieldnames=fieldnames)
+
+        csv_writer.writeheader()
+
+        for line in csv_reader:
+            del line['last_name']
+            csv_writer.writerow(line)
+
+

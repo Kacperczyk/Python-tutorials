@@ -1,0 +1,4 @@
+MODULE OS| REMOVE      --> os.remove(path)     --> Deletes a file.
+MODULE OS| RMDIR       --> os.rmdir(path)      --> Removes a directory (will only work if the directory is empty).
+
+MODULE SHUTIL| RMTREE  --> shutil.rmtree(path) --> Removes a directory (entire folder including its contents).
