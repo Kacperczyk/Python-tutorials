@@ -23,6 +23,9 @@ for x in range(rows):
 
 # Example Execution:
  - Let's say the user inputs rows = 3, columns = 5, and symbol = "*". The output will be:
+  '*****
+   *****
+   *****'
  
 # Explanation: 
 - The program creates a pattern of 3 rows and 5 columns using the '' symbol. 
