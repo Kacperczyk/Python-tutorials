@@ -49,7 +49,7 @@ with open('kamile.txt', 'r') as f:
                    - file_name    --> file object from which the CSV data will be read.
                    - fieldnames   --> an optional parameter that you can use to set your own column headers.
                                        - if not specified, the column headers will be taken from the first row of the CSV file.
-                  - dialect       --> optional parameter that specifies the CSV dialect to use (default excel)
+                   - dialect      --> optional parameter that specifies the CSV dialect to use (default excel)
 	
  - writeheader() --> saves a row of column headers to a CSV file.
  - del ['column_name'] --> If you have several columns and you don't want to display some of them, remove it from fieldnames and then use del['column name']
