@@ -55,8 +55,8 @@ with open('kamile.txt', 'r') as f:
  - del ['column_name'] --> If you have several columns and you don't want to display some of them, remove it from fieldnames and then use del['column name']
                            #example:
                                     for line in csv_reader:
-									    del line['last_name']
-									    csv_writer.writerow(line)
+					del line['last_name']
+					csv_writer.writerow(line)
 
 #example 1): 
 # This code reads the contents of the CSV file from 'kamile.txt' and then writes the same data, but separated by -, to 'kamile2.txt'.    
