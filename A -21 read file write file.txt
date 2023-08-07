@@ -5,7 +5,8 @@
 #Modes:
  - 'r': --> Read mode - opens the file for reading. Throws an exception if the file doesn't exist.
  - 'w': --> Write mode - opens the file for writing. If the file exists, it clears its previous content. If not, it creates a new file.
- - 'a': --> Append mode - opens the file for appending. New content is added at the end without removing the existing content. If the file doesn't exist, it creates a new one.
+ - 'a': --> Append mode - opens the file for appending. New content is added at the end without removing the existing content. 
+            If the file doesn't exist, it creates a new one.
  -'r+': --> Read and write mode - opens the file for both reading and writing. Throws an exception if the file doesn't exist.
 
 #Example of using read mode:
@@ -32,9 +33,10 @@ with open('file.txt', 'w') as file:
 - write()     --> Is used to write data to the file. 
                   - When you call it, it writes the provided data to the file at the position of the current file pointer.
 
-- seek(offset, whence) --> This method is used to set the file pointer's position to a specific offset. The offset is specified in bytes from the beginning of the file.
-                           - offset: The number of bytes by which to move the file pointer. It can be a positive or negative integer.
-                           - whence: Parameter specifying the reference point for the offset. The default value of whence is 0, indicating the beginning of the file.
-                                     Other possible values for whence are 1 (current file position) and 2 (end of the file).
+- seek(offset, whence) --> This method is used to set the file pointer's position to a specific offset. 
+                           The offset is specified in bytes from the beginning of the file.
+                       - offset: The number of bytes by which to move the file pointer. It can be a positive or negative integer.
+                       - whence: Parameter specifying the reference point for the offset. The default value of whence is 0, indicating the beginning of the file.
+                                 Other possible values for whence are 1 (current file position) and 2 (end of the file).
 
 - tell()      -->  returns the current position of the file pointer in bytes from the beginning of the file.
