@@ -12,9 +12,7 @@ with open('persons.txt', 'r') as f:
     csv_reader = csv.reader(f)      #It will display the contents of the file as a list (if we add a loop iteration over the file)
     for line in csv_reader:         #Automatically recognizes the field separator (,) in the CSV file and splits the fields accordingly.
         print(line)                 
-#-----------------------------------------------------------------------
-#-----------------------------------------------------------------------
-     
+#------------------------------------------------------------------------------------------------------------------------------------
 # WRITER --> Allows writing data to a CSV file. It facilitates writing individual rows and automatically formats fields and special characters.
  - newline=''    --> Specifies the newline character used to end each row in the CSV file.
  - delimiter='-' --> Specifies the character or string used to separate fields in the CSV file.
@@ -34,9 +32,7 @@ with open('kamile.txt', 'r') as f:
 
         for line in csv_reader:
             csv_writer.writerow(line)
-#-----------------------------------------------------------------------
-#-------------------------------z----------------------------------------
-    
+#------------------------------------------------------------------------------------------------------------------------------------
 # DICTREADER --> Provides functionality to read CSV data in the form of dictionaries,
                  where keys are column headers and values are corresponding fields.
                  - csv.DictReader(file_name, fieldnames=None, dialect='excel')
@@ -46,9 +42,7 @@ with open('kamile.txt', 'r') as f:
 
     for line in csv_reader:         # Treats the first row as column headers and returns an ordered dictionary
         print(line)                 # print(line['email'] If you typ this it will print only values from key 'email' 
-#-----------------------------------------------------------------------
-#-----------------------------------------------------------------------
-       
+#------------------------------------------------------------------------------------------------------------------------------------     
 # DICTWRITER --> Provides functionality to write CSV data in the form of dictionaries,
 			     where keys are column headers and values are corresponding fields.
 				 - csv.DictReader(file_name, fieldnames=None, dialect='excel')		 
@@ -77,7 +71,7 @@ with open('kamile.txt', 'r') as f:
         
         for line in csv_reader:
             csv_writer.writerow(line) 
-			
+#------------------------------------------------------------------------------------------------------------------------------------			
 #example 2): 
 #This code reads data from file 'TESTS_N' and writes only column 'first_name' to new file 'TESTS_N2'
 - In this code, we are not removing the 'last_name' column directly from the original data.
@@ -96,9 +90,7 @@ with open('TESTY_N', 'r') as f:
 
         for line in csv_reader:
             csv_writer.writerow({'first_name': line['first_name']})
-			
-
-#-----------------------------------------------------------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------------------------------------------------			
 #example 3):
  - In this code, deleting the 'last_name' column is done directly on the line dictionary using the del line['last_name'] statement.
  - This means that the column 'last_name' is removed from the original data read from the file 'TESTS_N'.
