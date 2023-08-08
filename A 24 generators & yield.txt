@@ -1,0 +1,69 @@
+#Generators:
+- A generator is a function that contains the 'yield' keyword. hen the interpreter encounters a 'yield' statement,
+  it suspends the function's execution but retains its state, allowing for resumption of execution in subsequent iterations.
+
+- Lazy Evaluation: 
+				  - Generators use lazy evaluation, which means they generate data only when needed.
+                  - This makes generators memory-efficient and enables processing of large datasets.
+
+- Generator expression comprehension: 
+				  - Apart from defining generator functions using 'yield',generators can also be created using generator expressions. 
+                  - Generator expressions work similarly to list comprehensions, but they use parentheses '()' instead of square brackets 
+                  - They generate values on-the-fly instead of storing the entire set in memory.
+
+- Obiekt iterowalny: 
+				  - Generators are iterable objects, which means you can iterate through their elements using a 'for' loop.
+
+#Yield:
+- Yield Statement: 
+                 - 'yield' is a keyword used inside generator functions to return values without halting the function's execution 
+                 - It allows returning values that can then be used in loops and iterations.
+
+- State Preservation: 
+                 - When the interpreter encounters a 'yield' statement, the function is paused, and its state is preserved..
+				 - The value provided after 'yield' is returned as the function's result. In the next function call, execution resumes from where it was paused,
+                   enabling the continuation of generating subsequent values.
+- Multiple Yield: 
+				 - A generator function can contain multiple 'yield' statements, enabling the return of different values at different moments.
+
+-------------------------------------------------------------------------------------------------------------
+#Generator expression comprehension
+#Example 1):
+# In this case generator will generate dictionary
+
+first_name = ['Kamil', 'Marta', 'Marek', 'John', 'Stefan', 'Beata', 'Aneta']
+last_name = ['Johnson', 'Kowalski', 'Black', 'Kacperczyk', 'Kosowski', 'Bury']
+
+x = ({'first_name': random.choice(first_name), 'last_name': random.choice(last_name)} for _ in range(10))
+
+#Example 2):
+number = (x**2 for x in range(10))
+-------------------------------------------------------------------------------------------------------------
+#Generator function
+#Example 1)
+# The same as example 1) from generator expression comprehension but in this case we are using 'yield'
+def gen(x):
+    first_name = ['Kamil', 'Marta', 'Marek', 'John', 'Stefan', 'Beata', 'Aneta']
+    last_name = ['Johnson', 'Kowalski', 'Black', 'Kacperczyk', 'Kosowski', 'Bury']
+
+    for _ in range(x):
+        yield {'first_name': random.choice(first_name), 'last_name': random.choice(last_name)}
+
+#Example 2):
+def generator_function():
+    for x in range(10):
+        yield x ** 2
+# The same as example 2) from generator expression comprehension but in this case we are using 'yield'
+-------------------------------------------------------------------------------------------------------------
+#TIP
+# If you want to use generator expression comprehension but in a function (but you dont want to use yield) (the function must return something) so it must be RETURN
+# The same as example 1) from  previous examples
+def gen(x):
+    first_name = ['Kamil', 'Marta', 'Marek', 'John', 'Stefan', 'Beata', 'Aneta','Joanna']
+    last_name = ['Johnson', 'Kowalski', 'Black', 'Kacperczyk', 'Kosowski', 'Bury','Janiec']
+
+    x = ({'first_name': random.choice(first_name), 'last_name': random.choice(last_name)} for _ in range(x))
+    return x
+
+for i in gen(10):
+    print(i)
