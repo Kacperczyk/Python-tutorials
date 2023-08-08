@@ -3,16 +3,16 @@
   it suspends the function's execution but retains its state, allowing for resumption of execution in subsequent iterations.
 
 - Lazy Evaluation: 
-				  - Generators use lazy evaluation, which means they generate data only when needed.
+		  - Generators use lazy evaluation, which means they generate data only when needed.
                   - This makes generators memory-efficient and enables processing of large datasets.
 
 - Generator expression comprehension: 
-				  - Apart from defining generator functions using 'yield',generators can also be created using generator expressions. 
+		  - Apart from defining generator functions using 'yield',generators can also be created using generator expressions. 
                   - Generator expressions work similarly to list comprehensions, but they use parentheses '()' instead of square brackets 
                   - They generate values on-the-fly instead of storing the entire set in memory.
 
-- Obiekt iterowalny: 
-				  - Generators are iterable objects, which means you can iterate through their elements using a 'for' loop.
+- Iterable object: 
+		  - Generators are iterable objects, which means you can iterate through their elements using a 'for' loop.
 
 #Yield:
 - Yield Statement: 
@@ -21,10 +21,10 @@
 
 - State Preservation: 
                  - When the interpreter encounters a 'yield' statement, the function is paused, and its state is preserved..
-				 - The value provided after 'yield' is returned as the function's result. In the next function call, execution resumes from where it was paused,
+		 - The value provided after 'yield' is returned as the function's result. In the next function call, execution resumes from where it was paused,
                    enabling the continuation of generating subsequent values.
 - Multiple Yield: 
-				 - A generator function can contain multiple 'yield' statements, enabling the return of different values at different moments.
+		 - A generator function can contain multiple 'yield' statements, enabling the return of different values at different moments.
 
 -------------------------------------------------------------------------------------------------------------
 #Generator expression comprehension
